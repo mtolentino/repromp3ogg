@@ -1,0 +1,178 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*
+body{
+	font: normal 16px ;
+	/*background: #f1f1f1;*/
+	/*ackground: url('../audio/moldo/Cicatrices/screen.jpg')no-repeat;
+	background-size: 100% auto;
+	text-align: left;
+
+	width: 100%;
+	height: 100%;
+}*/
+a{
+	color: #f00;
+}
+input[type="button"]{
+	width: 64px;
+	height: 64px;
+	margin: 2px;
+	border: 0;
+	
+	
+	cursor: pointer;
+}
+	input[type="button"]:hover{
+	
+	}
+	input[type="button"].clsSeleccionado{
+		border-color: #21BFF2;
+	}
+#divContenedor{
+	width: 100%;
+}
+	#divReproductor{
+		border: solid 1px #ccc;
+		box-shadow: 0 0 10px #ccc;
+		/*border-radius: 5px;*/
+		background: #fff;
+	}
+	#divInfo,#divControles
+	{
+		vertical-align: top;
+		display: inline-block;
+	}
+		#divInfo{
+			padding: 5px;
+			padding-top: 15px;
+			background: #f1f1f1;
+		}
+			#divLogo{
+				text-align: center;
+				display: inline-block;
+				padding-left: 10px;
+			}
+			#divControles ,#divInfoCancion
+			{
+				vertical-align: top;
+				display: inline-block;
+			}
+			#divInfoCancion{
+				text-align: left;
+		
+				
+				border-radius: 3px;
+				
+				margin-left: 20px;
+				margin-right: 10em;
+			}                                         
+				#divInfoCancion label{
+					display: block;
+				}
+					#divInfoCancion label strong{
+						width: 100px;
+						display: inline-block;
+					}
+		#divControles{
+			/*background: red;*/
+			text-align: center;
+			width: 50%;
+		}
+			#btnReproducir{background: url(../img/play.png) center no-repeat;}
+			#btnPausar{background: url(../img/pause.png) center no-repeat;}
+			#btnSiguiente{background: url(../img/siguiente.png) center no-repeat;}
+			#btnAnterior{background: url(../img/anterior.png) center no-repeat;}
+			#btnSilencio{background: url(../img/silencio.png) center no-repeat;}
+			#btnSubirVolumen{background: url(../img/subir-volumen.png) center no-repeat;}
+			#btnBajarVolumen{background: url(../img/bajar-volumen.png) center no-repeat;}
+			#btnRepetir{background: url(../img/repetir.png) center no-repeat;}
+		#divProgreso{
+			height: 28px;
+			margin: 10px;
+			border: solid 1px #2699D5;
+			background: #2f2f2f;
+			border-radius: 2px;
+			overflow: hidden;
+		}
+			#divBarra{
+				width: 0;
+				height: 100%;
+				background: #2652D5;
+				border-right: solid 3px #5B26D5;
+				box-shadow: 1px 1px 10px #5B26D5,
+				1px 1px 10px #5B26D5;
+			}
+		#divLista{
+			/*opacity: 0;
+			overflow: hidden;
+			display: none;*/
+			padding: 5px;
+			/*overflow-x: auto;*/
+			height: 150px;
+			color: #777;
+			font-size: 11px;
+		}
+			#divLista ol{
+				list-style-type: none;
+				padding-left: 10px;
+			}
+				#divLista ol li{
+					border-bottom: solid 1px #f1f1f1;
+					padding: 5px;
+					cursor: pointer;
+					border-radius: 3px;
+				}
+					#divLista ol li:hover{
+						font-size: 11.3px;
+						background: #5AE05A;
+						
+						color: #fff;
+						text-shadow: 1px 1px 1px #000;
+					}
+					#divLista ol li.clsSeleccionado{
+						background: #21BFF2;
+						color: #fff;
+						text-shadow: 1px 1px 1px #000;
+					}
+					#divLista ol li:last-child{
+						border-bottom: none;
+					}
+					#divLista ol li strong{
+						display: block;
+					}
+					#divLista ol li em{
+						display: block;
+						font-style: normal;
+					}
+		#lblDuracion,#lblEstado
+		{
+			color: #2652D5;
+			font-size: 12px;
+			margin-left: 1em;
+		}
+		#lblEstado
+		{
+			float: right;
+			margin-right: 1em;
+		}
+		#lblCancion
+		{
+			color:#FF462E;
+			margin-left: 1em;
+			text-shadow:1px 1px 10px #FF462E;
+		}
+		#logo
+		{
+			width:100px;
+			height:100px;
+			border-radius: 3px  ;
+			box-shadow: 1px 1px 10px #2d2d2d;
+		}
+		#track 
+		{
+			background: #f2f2f2;
+		}
+		
